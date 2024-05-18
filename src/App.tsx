@@ -9,17 +9,14 @@ function App() {
         lg: `"nav nav" "Aside Main"`,
       }}
     >
+      {" "}
       <GridItem area={"nav"}>
         <NavBar></NavBar>
       </GridItem>
       <Show above="lg">
-        <GridItem area={"Aside"} bg={"blue"}>
-          Aside
-        </GridItem>
+        <GridItem area={"Aside"}>Aside</GridItem>
       </Show>
-      <GridItem area={"Main"} bg={"pink"}>
-        Main
-      </GridItem>
+      <GridItem area={"Main"}>Main</GridItem>
     </Grid>
   );
 }
